@@ -6,16 +6,17 @@ import {JoinContainer} from '../components/container';
 import banner1 from '../images/banner1.jpg';
 import banner2 from '../images/banner2.jpg';
 import banner3 from '../images/banner3.jpg';
+import { shipper_keeper, our_solution } from '../static/static_index';
 
 const IndexPage = () => {
+  
   return (
     <main>
         <Nav pageTitle="ShipperKeeper"></Nav>
-        <body style={{"backgroundColor":"#606c38ff"}}>
-            <p>&nbsp;</p>
-            <Container bannerTitle="Shipper Keeper" bannerSubtitle="The future of Online Shipping" bannerImage={banner3} style={{"marginTop":"50px!important"}}></Container>
-            <Container bannerTitle="Our Solution" bannerSubtitle="An API to send shipments to local stores" bannerImage={banner2}></Container>
-            <Container bannerTitle="Our Purpose" bannerSubtitle="To grow both online and brick-and-mortar stores" bannerImage={banner1}></Container>
+        <body >
+            <Container imagePosition='left' bannerTitle="Shipper Keeper" bannerSubtitle="The future of Online Shipping" children={shipper_keeper} bannerImage={banner3} style={{"marginTop":"50px!important"}}></Container>
+            <Container imagePosition='right' bannerTitle="Our Solution" bannerSubtitle="An API to send shipments to local stores" children={our_solution} bannerImage={banner2}></Container>
+            <Container imagePosition='left' bannerTitle="Our Purpose" bannerSubtitle="To grow both online and brick-and-mortar stores" children={shipper_keeper} bannerImage={banner1} ></Container>
             <JoinContainer bannerTitle="Shipper" bannerSubtitle="Become a" bannerImage={banner3}></JoinContainer>
             <JoinContainer bannerTitle="Keeper" bannerSubtitle="Become a" bannerImage={banner1}></JoinContainer>
         </body>
