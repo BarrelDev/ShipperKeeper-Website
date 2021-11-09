@@ -29,19 +29,15 @@ const Container = (props) => {
 
 const JoinContainer = (props) => {
     const bannerTitle = props.bannerTitle;
-    const bannerSubtitle = props.bannerSubtitle;
     const bannerImage = props.bannerImage;
     return (
         <Card className={joinContainer}>
             <Card.Img variant="overlay" src={bannerImage}/>
             <Card.ImgOverlay>
                 <Card.Body>
-                    <Card.Text className={subtitle}>
-                        {bannerSubtitle}
-                    </Card.Text>
                     <Card.Title className={header}>{bannerTitle}</Card.Title>
                     <div className={buttonCenter}>
-                        <Button href="/" variant="outline-primary" size="lg">Learn More</Button>
+                        <Button href="/" variant="outline-primary" size="lg">Join Us</Button>
                     </div>
                 </Card.Body>
             </Card.ImgOverlay>
