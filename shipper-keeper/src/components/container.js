@@ -37,7 +37,7 @@ const JoinContainer = (props) => {
                 <Card.Body>
                     <Card.Title className={header}>{bannerTitle}</Card.Title>
                     <div className={buttonCenter}>
-                        <Button href="/" variant="outline-primary" size="lg">Join Us</Button>
+                        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSeoZryrnwLPaHDJF-eywlRHGK7vI7y-bJ4SJwMDIUtLrX9saQ/viewform" variant="outline-primary" size="lg">Join Us</Button>
                     </div>
                 </Card.Body>
             </Card.ImgOverlay>

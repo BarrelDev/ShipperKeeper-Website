@@ -14,7 +14,7 @@ const Navbar = (props) => {
                 <ul>
                     <li><img className={logo} src={icon} alt="ShipperKeeper"/></li>
                     <li><Link to="/">Home</Link></li>
-                    <li className={aboutButton}><Link to="/contact">Contact Us</Link></li>
+                    <li className={aboutButton}><a href="mailto:contactshipperkeeper@gmail.com">Contact Us</a></li>
                 </ul>
             </header>
         </div>
