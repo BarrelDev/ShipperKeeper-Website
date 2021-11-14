@@ -6,19 +6,21 @@ import {JoinContainer} from '../components/container';
 import banner1 from '../images/banner1.jpg';
 import banner2 from '../images/banner2.jpg';
 import banner3 from '../images/banner3.jpg';
-import { shipper_keeper, our_solution } from '../static/static_index';
+import { shipper_keeper, our_solution, our_purpose } from '../static/static_index';
+import "../styles/index.css";
 
 const IndexPage = () => {
   
   return (
     <main>
         <Nav pageTitle="ShipperKeeper"></Nav>
-        <body >
-            <Container imagePosition='left' bannerTitle="Shipper Keeper" bannerSubtitle="The future of Online Shipping" children={shipper_keeper} bannerImage={banner3} style={{"marginTop":"50px!important"}}></Container>
-            <Container imagePosition='right' bannerTitle="Our Solution" bannerSubtitle="An API to send shipments to local stores" children={our_solution} bannerImage={banner2}></Container>
-            <Container imagePosition='left' bannerTitle="Our Purpose" bannerSubtitle="To grow both online and brick-and-mortar stores" children={shipper_keeper} bannerImage={banner1} ></Container>
-            <JoinContainer bannerTitle="Shipper" bannerSubtitle="Become a" bannerImage={banner3}></JoinContainer>
-            <JoinContainer bannerTitle="Keeper" bannerSubtitle="Become a" bannerImage={banner1}></JoinContainer>
+        <body>
+            <p>&nbsp</p>
+            <Container imagePosition='left' bannerTitle="Shipper Keeper" bannerSubtitle="The future of Online Shipping" children={shipper_keeper} bannerImage={banner3} bannerLink="about"></Container>
+            <Container imagePosition='right' bannerTitle="Our Solution" bannerSubtitle="A tight technology mesh between the consumer, the online and local merchants" children={our_solution} bannerImage={banner2}></Container>
+            <Container imagePosition='left' bannerTitle="Our Purpose" bannerSubtitle="To revive and thrive the local economy" children={our_purpose} bannerImage={banner1} ></Container>
+            <JoinContainer bannerTitle="Shipper" bannerImage={banner3}></JoinContainer>
+            <JoinContainer bannerTitle="Keeper" bannerImage={banner1}></JoinContainer>
         </body>
         <Footer></Footer>
     </main>

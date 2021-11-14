@@ -64,7 +64,6 @@ const Container = (props) => {
 
 const JoinContainer = (props) => {
     const bannerTitle = props.bannerTitle;
-    const bannerSubtitle = props.bannerSubtitle;
     const bannerImage = props.bannerImage;
     return (
         <Card className={joinContainer}>
@@ -72,11 +71,8 @@ const JoinContainer = (props) => {
             <Card.ImgOverlay>
                 <Card.Body>
                     <Card.Title className={header}>{bannerTitle}</Card.Title>
-                    <Card.Text className={subtitle}>
-                        {bannerSubtitle}
-                    </Card.Text>
                     <div className={buttonCenter}>
-                        <Button href="/" variant="primary" size="lg">Learn More</Button>
+                        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSeoZryrnwLPaHDJF-eywlRHGK7vI7y-bJ4SJwMDIUtLrX9saQ/viewform" variant="outline-primary" size="lg">Join Us</Button>
                     </div>
                 </Card.Body>
             </Card.ImgOverlay>
