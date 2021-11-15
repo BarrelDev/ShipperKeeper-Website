@@ -1,5 +1,33 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
+/* @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
+ */
+
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
 main{
-    font-family: 'Source Sans Pro', sans-serif !important;
-    background-color: var(--dark-olive-green);
+    font-family: Roboto-Regular;
+    background-color: rgba(var(--dark-olive-green-rgb ),0.9);
   }

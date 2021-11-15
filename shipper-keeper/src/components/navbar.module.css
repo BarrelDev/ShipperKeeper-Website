@@ -1,7 +1,7 @@
 @import url("../styles/palette.css");
 ul {
     z-index: 999;
-    background-color: var(--fawn);
+    background-color: rgb(var(--kombu-green-rgb));
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ li {
   }
 li a {
     display: block;
-    color: black;
+    color: rgba(var(--fawn-rgb),0.9);
     font-size: 18px;
     line-height:50px;
     font-weight: bold;
