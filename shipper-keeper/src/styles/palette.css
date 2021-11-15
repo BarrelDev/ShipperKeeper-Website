@@ -1,6 +1,7 @@
 :root {
     /* CSS HEX */
     --key-lime: #d9ed92;
+    --key-lime-rgb:217, 237, 146;
     --yellow-green-crayola: #b5e48c;
     --granny-smith-apple: #99d98c;
     --ocean-green: #76c893;
@@ -10,6 +11,7 @@
     --celadon-blue: #1a759f;
     --lapis-lazuli: #1e6091;
     --yale-blue: #184e77;
+    --white-rgb:#f4fdf2;
 
     /* CSS HSL */
     --key-lime: hsla(73, 72%, 75%, 1);
@@ -23,12 +25,14 @@
     --lapis-lazuli: hsla(206, 66%, 34%, 1);
     --yale-blue: hsla(206, 66%, 28%, 1);
 
-        /* CSS HEX */
-    --dark-olive-green: #606c38ff;
-    --kombu-green: #283618ff;
-    --cornsilk: #fefae0ff;
-    --fawn: #dda15eff;
-    --liver-dogs: #bc6c25ff;
+        /* CSS RGB */
+    --dark-olive-green-rgb: 96, 108, 56;
+    --kombu-green-rgb:40, 54, 24;
+    --cornsilk-rgb: 254, 250, 224;
+    --fawn-rgb: 221, 161, 94;
+    --liver-dogs-rgb: 188, 108, 37;
+    --orange-2: 188, 46, 37;
+    --orange-3:188,90,37;
 
     /* CSS HSL */
     --dark-olive-green: hsla(74, 32%, 32%, 1);

@@ -1,13 +1,14 @@
 footer {
-    z-index: 999;
-    position: relative;
-    background-color: #333;
-    color: white;
+    z-index: 9999;
+    position: absolute;
+    background-color:rgb(var(--kombu-green-rgb));
+    color: rgba(var(--fawn-rgb),0.9);
     padding: 16px;
-    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 16px;
     padding: 32px, 100%;
     width:100%;
-    height: 7em;
+    height: 60px;
     bottom: 0;
     left: 0;
 }

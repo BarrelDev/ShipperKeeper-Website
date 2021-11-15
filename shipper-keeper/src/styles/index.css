@@ -1,6 +1,6 @@
 body
 {
-    background-color: var(--dark-olive-green);
+    background-color: rgb(var(--dark-olive-green-rgb));
 }
 footer
 {
