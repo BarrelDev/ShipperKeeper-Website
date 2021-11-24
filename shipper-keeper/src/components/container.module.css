@@ -4,14 +4,11 @@
     font-size: 48px;
     text-align: center;
     align-content: center;
-    color: rgba(var(--fawn-rgb),0.9);
 }
 .subtitle{
     font-size: 24px;
     text-align: center;
     align-content: center;
-    color: rgba(var(--fawn-rgb),0.9);
-    /* color: white; */
 }
 .border {
     border:2px solid #25ff13;
@@ -21,38 +18,55 @@
     font-size: 16px;
     text-align: center;
     align-content: center;
-    color: rgba(var(--cornsilk-rgb),0.9);
-}
-.greenBg {
-    background-color: rgba(var(--key-lime-rgb),0.3);
 }
 .container{
-    width: 100%;
-    /* margin-top: 50px; */
+    width: calc(100% +16px);
     margin-bottom: 0px;
     min-height: 320px;
     box-shadow: 0px 0px;
-    background-color: rgba(var(--dark-olive-green-rgb),0.5);
+    background-color: transparent;
     border: None;
-    /* cursor: pointer; */
+    /* margin: 0px -12px !important; */
 }
 .cardBody {
     width: inherit;
-    /* margin-left: 1em !important; */
-    /* margin-right: 1em !important; */
+    padding: 0px 0px !important;
+    overflow: hidden;
+    margin: 0px -12px !important;
+}
+.containerBlock {
+    width: 100%;
+    padding: 16px !important;
+    padding-top:24px !important
+}
+.containerBlock::before {
+    content: " ";
 }
 .container img{
-    width: 100% !important;
-    height: 100% !important;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
     max-height: 500px !important;
     object-fit: cover;
+    margin-left:-8px;
+    margin-right:-8px;
+}
+.containerTextLeft {
+    width: calc(100% -16px);
+    padding: 16px 16px !important;
+}
+.containerImg {
+    margin-left: -8px !important;
+    max-height: 500px !important;
+    object-fit: cover;
+    width: calc(100% + 32px);
+    height: calc(100% + 32px);
 }
 .joinContainer{
     min-height: 200px;
     width: calc(100%-16px);
-    min-width: 300px;
+    min-width: 250px;
     padding: 8px;
-    background-color: rgba(var(--fawn-rgb),0.9);
+    background-color:rgba(224, 232, 199, 1);
     border-radius: 20px;
     align-content: center;
     text-align: center;
@@ -107,7 +121,7 @@
         font-size: 18px;
         text-align: center;
         align-content: center;
-        color: rgba(var(--fawn-rgb),0.9);
+        /* color: rgba(0,0,0,0.9); */
         /* color: white; */
     }
     .text
@@ -115,7 +129,7 @@
         font-size: 14px;
         text-align: center;
         align-content: center;
-        color: rgba(var(--cornsilk-rgb),0.9);
+        /* color: rgba(0,0,0,0.9); */
     }
     
     .buttonCenter > a {
@@ -131,14 +145,14 @@
         font-size: 22px;
         text-align: center;
         align-content: center;
-        color: rgba(var(--fawn-rgb),0.9);
+        /* color: rgba(var(--fawn-rgb),0.9); */
     }
     .text
     {
         font-size: 14px;
         text-align: center;
         align-content: center;
-        color: rgba(var(--cornsilk-rgb),0.9);
+        /* color: rgba(0,0,0,0.9); */
     }
     
     .buttonCenter > a {
