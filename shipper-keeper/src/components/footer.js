@@ -4,9 +4,10 @@ import {textCenter} from "./footer.module.css";
 
 const Footer = () => {
     return (
-        <div>
+        <div className="clearfix">
             <footer>
-                <p className={textCenter}>ShipperKeeper</p>
+                <h3 className={textCenter}>ShipperKeeper.com</h3>
+                <p className={textCenter}>© Shipper Keeper.com.  All Rights Reserved.</p>
             </footer>
         </div>
     )

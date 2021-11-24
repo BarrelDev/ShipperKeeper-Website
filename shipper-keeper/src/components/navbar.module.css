@@ -1,25 +1,75 @@
 @import url("../styles/palette.css");
+
+.clearfix {
+  width:auto;
+  color: #ffffff;
+  background-color: rgb(40, 54, 24);
+}
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+  height: 0; 
+}
+.uheader {
+  background-image: none;
+}
+.uheader :not(.navItem) > h5{
+  color: #808080;
+}
+.navContainer > .navBar > .navItem > .navLink {
+  padding: 10px 20px;
+}
+.navContainer .navItem .navItem {
+  display: block;
+}
+.navContainer .navItem:hover > .navpopup:not(.disable) {
+  visibility: visible;
+  pointer-events: auto;
+}
+.navContainer::after {
+  content: "";
+}
+.navBar {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navItem {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.navBar,
+.navItem {
+  position: relative;
+}
 ul {
     z-index: 999;
-    background-color: rgb(var(--kombu-green-rgb));
+    background-color: rgb(40, 54, 24);
     list-style-type: none;
-    margin: 0;
+    margin: 0px !important;
     padding: 0;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    height: 50px;
+    /* min-height: 50px; */
+    height:auto;
   }
 li {
     display: inline;
     float: left;
-    height: 50px;
+    /* height: 50px; */
     line-height: 50px;
   }
 li a {
     display: block;
-    color: rgba(var(--fawn-rgb),0.9);
+    color: rgba(255,255,255,0.9);
     font-size: 18px;
     line-height:50px;
     font-weight: bold;
@@ -44,12 +94,13 @@ li .logo {
   width:auto;
   padding-left:4px;
   padding-right:4px;
-  height: 50px;
-  line-height: 50px;
+  height: 55px;
+  line-height: 55px;
 }
 li .logo img{
-  width: 25px !important;
-  height: 25px !important;
+    width: 53px !important;
+    height: 53px !important;
+    margin: 17px auto 0 -53px;  
 }
 .aboutButton{
   float:right;
