@@ -28,5 +28,19 @@ module.exports = {
         icon: `src/images/icon.png`,
       }
     },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyAvSH2cJQWEN5Yp32kI2X83fC_V5xTdJoQ",
+          authDomain: "web-shipper-keeper.firebaseapp.com",
+          databaseURL: "<YOUR_FIREBASE_DATABASE_URL>",
+          projectId: "web-shipper-keeper",
+          storageBucket: "web-shipper-keeper.appspot.com",
+          messagingSenderId: "226083968262",
+          appId: "<YOUR_FIREBASE_APP_ID>"
+        }
+      }
+    },
   ],
 };
