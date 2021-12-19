@@ -32,13 +32,12 @@ module.exports = {
       resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {
-          apiKey: "AIzaSyAvSH2cJQWEN5Yp32kI2X83fC_V5xTdJoQ",
-          authDomain: "web-shipper-keeper.firebaseapp.com",
-          databaseURL: "<YOUR_FIREBASE_DATABASE_URL>",
-          projectId: "web-shipper-keeper",
-          storageBucket: "web-shipper-keeper.appspot.com",
-          messagingSenderId: "226083968262",
-          appId: "<YOUR_FIREBASE_APP_ID>"
+          apiKey: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          authDomain: "what could have been here?",
+          projectId: "hmmmmmmmmmmmmmmmmmmmmmmmmmm",
+          storageBucket: "somthing was here i think",
+          messagingSenderId: "somthing i guess",
+          appId: "something i guess",
         }
       }
     },
