@@ -1,0 +1,5 @@
+shipper-keeper/node_modules/
+shipper-keeper/.cache/
+shipper-keeper/public/
+shipper-keeper/config.json
+shipper-keeper/package-lock.json
