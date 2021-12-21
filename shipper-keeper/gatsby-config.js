@@ -1,3 +1,5 @@
+var config = require('./config.json');
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -32,12 +34,12 @@ module.exports = {
       resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {
-          apiKey: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-          authDomain: "what could have been here?",
-          projectId: "hmmmmmmmmmmmmmmmmmmmmmmmmmm",
-          storageBucket: "somthing was here i think",
-          messagingSenderId: "somthing i guess",
-          appId: "something i guess",
+          apiKey: config.apiKey,
+          authDomain: config.authDomain,
+          projectId: config.projectId,
+          storageBucket: config.storageBucket,
+          messagingSenderId: config.messagingSenderId,
+          appId: config.appId,
         }
       }
     },
