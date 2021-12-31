@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://web-shipper-keeper.firebaseapp.com",
     title: "ShipperKeeper",
   },
   plugins: [
     "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -27,19 +26,6 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/icon.png`,
       }
-    },
-    {
-      resolve: "gatsby-plugin-firebase",
-      options: {
-        credentials: {
-          apiKey: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-          authDomain: "what could have been here?",
-          projectId: "hmmmmmmmmmmmmmmmmmmmmmmmmmm",
-          storageBucket: "somthing was here i think",
-          messagingSenderId: "somthing i guess",
-          appId: "something i guess",
-        }
-      }
-    },
+    }
   ],
 };
