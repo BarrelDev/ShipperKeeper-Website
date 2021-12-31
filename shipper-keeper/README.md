@@ -8,6 +8,11 @@ Run the following command to run locally.
 
 ``` npm start```
 
+## Todos:
+
+- Login form need to be editable. 
+- create a state Management.
+
 
 ## Note:
 
