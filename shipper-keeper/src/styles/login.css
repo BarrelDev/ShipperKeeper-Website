@@ -1,0 +1,9 @@
+main {
+    top:60px;
+}
+
+.loginForm {
+    margin-top:60px;
+    width: calc(100% - 16px);
+    padding: 4px;
+}

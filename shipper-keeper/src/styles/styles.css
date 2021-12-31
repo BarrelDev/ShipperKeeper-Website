@@ -1,7 +1,6 @@
 /* @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
  */
 
-
 @font-face {
   font-family: "Roboto-Black";
   src: url("../fonts/Roboto/Roboto-Black.ttf");
@@ -27,7 +26,11 @@
   src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
 
-main{
-    font-family: Roboto-Regular;
-    background-color: rgba(var(--dark-olive-green-rgb ),0.9);
-  }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+main {
+  font-family: Roboto-Regular;
+  /* background-color: rgba(var(--dark-olive-green-rgb ),0.9); */
+}
