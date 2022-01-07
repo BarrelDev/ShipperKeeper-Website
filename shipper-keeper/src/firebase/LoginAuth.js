@@ -1,6 +1,8 @@
 import { auth } from "./firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword,onAuthStateChanged   } from "firebase/auth";
 import {signOut } from "firebase/auth";
+import { navigate } from "gatsby"
+
 const createUser = async(email, password) => {
     await createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
@@ -25,6 +27,7 @@ const login = async(email,password) => {
       // Signed in 
       const user = userCredential.user;
       console.log("User login status: ", user);
+      navigate("/");
       // ...
     })
     .catch((error) => {
