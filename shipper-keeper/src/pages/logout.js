@@ -6,7 +6,6 @@ export default class LogoutPage extends React.Component {
 
     render() {
         logout();
-        navigate("/");
         return (
             <div>
                 <h1>Logout Page</h1>

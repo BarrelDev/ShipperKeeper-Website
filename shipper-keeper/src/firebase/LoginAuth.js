@@ -2,13 +2,9 @@ import { auth } from "./firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword,onAuthStateChanged   } from "firebase/auth";
 import {signOut } from "firebase/auth";
 import { navigate } from "gatsby";
-import React, {createContext} from 'react';
+import { createContext } from 'react';
 
-export const LoginStateContext = createContext(false);
-
-this.state = {
-  login: false,
-};
+export var LoginStateContext = createContext(true);
 
 const createUser = async(email, password) => {
     await createUserWithEmailAndPassword(auth, email, password)
@@ -28,17 +24,13 @@ const createUser = async(email, password) => {
 }
 
 const login = async(email,password) => {
-
     await signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
       console.log("User login status: ", user);
       navigate("/");
-      this.setState({login:true});
-      return(
-        <LoginStateContext.Provider value={this.state.login}/>
-      )
+      LoginStateContext = createContext(true);
       // ...
     })
     .catch((error) => {
@@ -50,13 +42,12 @@ const login = async(email,password) => {
 
 
 const logout = async()=>{
+    // change LoginStateContext to
     await signOut(auth).then(() => {
         // Sign-out successful.
         console.log("User is successfully logged out.")
-        this.setState({login:false});
-        return(
-            <LoginStateContext.Provider value={this.state.login}/>
-        )
+        LoginStateContext = createContext(false);
+        navigate('/');
       }).catch((error) => {
         // An error happened.
         console.log ("Error in logging out.");
